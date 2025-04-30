@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight Management</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="Flight_management.css">
+    <link rel="icon" type="image/x-icon" href="plane.png">
+</head>
+<body class="Fight_management_page">
+      <!-- Header Section -->
+      <header>
+        <div class="container">
+            <div class="logo">
+                <img src="plane.png" alt="plane" width="50" height="50">
+                <h1>Sky Airport</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+        <!-- Page Banner -->
+        <section class="page-banner">
+            <div class="container">
+                <h1>Flight Management</h1>
+                <p>Comprehensive tools for efficient flight operations and scheduling</p>
+            </div>
+        </section>
+        <!--Dashboard-->
+        <section class="dashboard">
+            <div class="container">
+                <div class="dashboard-header">
+                    <h2>Flight Operations Dashboard</h2>
+                    <div class="dashboard-actions">
+                       <a href="add_flight.html"> <button class="add_flight">Add New Flight</button></a>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search flights">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                </div>
+         <!-- Flight Status Overview -->
+         <div class="status-overview">
+            <div class="on-time">
+             <div class="status-card">
+                     <div class="status-details">
+                          <h3>24</h3>
+                           <p>On Time</p>
+                     </div>
+                 </div>
+             </div>
+                  <div class="delayed">
+                    <div class="status-card">
+                        <div class="status-details">
+                            <h3>5</h3>
+                            <p>Delayed</p>
+                        </div>
+                    </div>
+                    </div>
+                <div class="cancelled">
+                    <div class="status-card">
+                        <div class="status-details">
+                            <h3>2</h3>
+                            <p>Cancelled</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="boarding">
+                    <div class="status-card">
+                        <div class="status-details">
+                            <h3>8</h3>
+                            <p>Boarding</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="landed">
+                    <div class="status-card">
+                        <div class="status-details">
+                            <h3>12</h3>
+                            <p>Landed</p>
+                        </div>
+                    </div>
+                </div>
+         </div>
+      </div>
+  </section>  
+  <div class="status-background">    
+  <!--Departures-->
+  <div class="status">
+    <h2>Departures</h2>
+    <table>
+    <thead>
+        <tr>
+            <th>Flight Number</th>
+            <th>Destination</th>
+            <th>Time</th>
+            <th>Terminal</th>
+            <th>Gate</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>SA 1024</td>
+            <td>Mumbai (BOM)</td>
+            <td>08:30</td>
+            <td>T1</td>
+            <td>G12</td>
+            <td><span class="status-on-time">On Time</span></td>
+        </tr>
+        <tr>
+            <td>SA 3456</td>
+            <td>Bengaluru (BLR)</td>
+            <td>09:15</td>
+            <td>T2</td>
+            <td>G05</td>
+            <td><span class="status-boarding">Boarding</span></td>
+        </tr>
+        <tr>
+            <td>SA 7890</td>
+            <td>Hyderabad (HYD)</td>
+            <td>10:45</td>
+            <td>T1</td>
+            <td>G22</td>
+            <td><span class="status-delayed">Delayed</span></td>
+        </tr>
+        <tr>
+            <td>SA 2468</td>
+            <td>Tokyo (HND)</td>
+            <td>14:20</td>
+            <td>T3</td>
+            <td>G10</td>
+            <td><span class="status-on-time">On Time</span></td>
+        </tr>
+        <tr>
+            <td>SA 1357</td>
+            <td>Dubai (DXB)</td>
+            <td>16:30</td>
+            <td>T2</td>
+            <td>G15</td>
+            <td><span class="status-cancelled">Cancelled</span></td>
+        </tr>
+    </tbody>
+</table>
+  <!--Arrivals-->
+    <h2>Arrivals</h2>
+  <table>
+    <thead>
+        <tr>
+            <th>Flight Number</th>
+            <th>Origin</th>
+            <th>Time</th>
+            <th>Terminal</th>
+            <th>Gate</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>SA 5678</td>
+            <td>Pune (PNQ)</td>
+            <td>07:45</td>
+            <td>T2</td>
+            <td>G08</td>
+            <td><span class="status-landed">Landed</span></td>
+        </tr>
+        <tr>
+            <td>SA 9012</td>
+            <td>Sydney (SYD)</td>
+            <td>09:30</td>
+            <td>T1</td>
+            <td>G18</td>
+            <td><span class="status-on-time">On Time</span></td>
+        </tr>
+        <tr>
+            <td>SA 3579</td>
+            <td>Hyderabad (HYD)</td>
+            <td>11:15</td>
+            <td>T3</td>
+            <td>G07</td>
+            <td><span class="status-delayed">Delayed</span></td>
+        </tr>
+        <tr>
+            <td>SA 3579</td>
+            <td>Berlin (BER)</td>
+            <td>11:15</td>
+            <td>T3</td>
+            <td>G07</td>
+            <td><span class="status-delayed">Delayed</span></td>
+        </tr>
+        <tr>
+            <td>SA 3579</td>
+            <td>Mumbai (BOM)</td>
+            <td>11:15</td>
+            <td>T3</td>
+            <td>G07</td>
+            <td><span class="status-cancelled">Cancelled</span></td>
+        </tr>
+    </tbody>
+  </table>
+  <!--Scheduled -->
+  <h2>Scheduled</h2>
+  <table>
+    <thead>
+        <tr>
+            <th>Flight Number</th>
+            <th>Route</th>
+            <th>Date</th>
+            <th>Departure</th>
+            <th>Arrival</th>
+            <th>Aircraft</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>SA 2024</td>
+            <td>AMD → HYB</td>
+            <td>Jul 23, 2023</td>
+            <td>07:30</td>
+            <td>15:45</td>
+            <td>Boeing 787</td>
+        </tr>
+        <tr>
+            <td>SA 4680</td>
+            <td>AMD → PNQ</td>
+            <td>Jul 24, 2023</td>
+            <td>09:00</td>
+            <td>22:30</td>
+            <td>Airbus A350</td>
+        </tr>
+        <tr>
+            <td>SA 7531</td>
+            <td>AMD → BOM</td>
+            <td>Jul 25, 2023</td>
+            <td>13:45</td>
+            <td>17:30+1</td>
+            <td>Boeing 777</td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+   <!-- Footer -->
+  <footer>
+    <div class="container">     
+         <h3>&copy; 2025 Sky Airport. All rights reserved.</h3>
+   </div>
+</footer>
+</body>
+</html>

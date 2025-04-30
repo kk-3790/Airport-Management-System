@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Passenger</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="add_passenger.css">
+    <link rel="icon" type="image/x-icon" href="plane.png">
+</head>
+<body class="add-passenger-page">
+    <!-- Header Section -->
+   <header>
+    <div class="container">
+        <div class="logo">
+            <img src="plane.png" alt="plane" width="50" height="50">
+            <h1>Sky Airport</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+     <!-- Page Banner -->
+     <section class="page-banner">
+        <div class="container">
+            <h1>Add New Passenger</h1>
+            <p>Enter details of Passenger</p>
+        </div>
+    </section>
+     <!-- Add Flight Form Section -->
+     <section class="add-flight-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2> Passenger Information</h2>
+                </div>
+
+                <form class="add-flight-form">
+                            <!-- Flight Information -->
+                            <div class="form-section">
+                                <h3>Basic Details</h3>
+
+                                <div class="form-group">
+                                    <label for="airline">Airline*</label>
+                                    <select id="airline" name="airline" required>
+                                        <option value="">Select Airline</option>
+                                        <option value="sky-airport">Sky Airport Airlines</option>
+                                        <option value="delta">Delta Airlines</option>
+                                        <option value="united">United Airlines</option>
+                                        <option value="american">American Airlines</option>
+                                        <option value="british">British Airways</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="flightNumber">Flight Number*</label>
+                                    <input type="text" id="flightNumber" name="flightNumber" placeholder="e.g. SA 1024" required>
+                                </div>
+                                
+        
+                            </div>
+
+                               <!-- Schedule Information -->
+                        <div class="form-section">
+                            <h3>Schedule</h3>
+                            
+                            <div class="form-group">
+                                <label for="flightDate">Flight Date*</label>
+                                <input type="date" id="flightDate" name="flightDate" required>
+                            </div>
+                        
+                                <div class="form-group">
+                                    <label for="departureTime">Departure Time*</label>
+                                    <input type="time" id="departureTime" name="departureTime" required>
+                                </div>
+                        </div>
+                            
+                            <!-- Route Information -->
+                            <div class="form-section">
+                                <h3>Passenger Information</h3>
+                                
+                                <div class="form-group">
+                                    <label for="First Name">First Name</label>
+                                    <input type="text" id="First Name" name="First Name" placeholder="Enter Passenger First Name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="Last Name">Last Name</label>
+                                    <input type="text" id="Last Name" name="Last Name" placeholder="Enter Passenger Last Name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="Email">Email</label>
+                                    <input type="text" id="Email" name="Email" placeholder="Enter Passenger Email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="Mobile">Phone Number</label>
+                                    <input type="text" id="Mobile" name="Mobile" placeholder="Enter Passenger Phone Number" required>
+                                </div>
+                                
+                                <div class="form-section">
+                                    <div class="form-group">
+                                        <label for="Passenger Type">Passenger Type</label>
+                                        <select id="Passenger Type" name="Passenger Type">
+                                            <option value="">Select Passenger Type</option>
+                                            <option value="p1">Adult(12 Years or more older)</option>
+                                            <option value="p2">Child(2 Years or more older)</option>
+                                            <option value="p3">Infant</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="Age">Age</label>
+                                        <input type="text" id="Age" name="Age" placeholder="Enter Passenger Age">
+                                    </div>
+                                </div>
+
+                                <div class="form-section">
+                                    <div class="form-group">
+                                        <label for="Seat Type">Seat Type</label>
+                                        <select id="Seat Type" name="Seat Type">
+                                            <option value="">Select Seat Type</option>
+                                            <option value="f1">Economy</option>
+                                            <option value="f2">Premium Economy</option>
+                                            <option value="f3">Business</option>
+                                            <option value="f4">First Class</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="Seat Number">Seat Number</label>
+                                        <input type="text" id="Seat Number" name="Seat Number" placeholder="e.g. G12">
+                                    </div>
+                                </div>
+                            </div>
+                      
+                        
+                        <!-- Additional Information -->
+                        <div class="form-section">
+                            <h3>Additional Information</h3>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="isInternational" name="isInternational">
+                                    <span class="checkbox-text">International Flight</span>
+                                </label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="notes">Notes</label>
+                                <textarea id="notes" name="notes" rows="3" placeholder="Any additional information about this flight"></textarea>
+                            </div>
+                        </div>
+            </div>
+                    
+         <!-- Form Actions -->
+             <div class="form-actions">
+                 <button type="button" class="btn cancel" >
+                    <a href="passenger_information.html">Cancel</a>       
+                  </button>
+                    <button type="reset" class="btn reset">
+                        <a href="add_passenger.html">Reset</a>       
+                        </button>
+                        <button type="submit" class="btn"> Add Passenger </button>
+             </div>
+         </form>
+     </div>
+    </section>  
+    <!-- Footer -->
+ <footer>
+    <div class="container">     
+         <h3>&copy; 2025 Sky Airport. All rights reserved.</h3>
+   </div>
+</footer>
+</body>
+</html>

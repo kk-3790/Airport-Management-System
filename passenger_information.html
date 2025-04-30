@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger Information</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="passenger_information.css">
+    <link rel="icon" type="image/x-icon" href="plane.png">
+</head>
+<body class="passenger-information-page">
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="plane.png" alt="plane" width="50" height="50">
+                <h1>Sky Airport</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+
+      <!-- Page Banner -->
+      <section class="page-banner">
+        <div class="container">
+            <h1>Passenger Information</h1>
+            <p>Terminal and flight-wise passenger details</p>
+        </div>
+    </section>
+     <!-- Dashboard Summary -->
+     <section class="dashboard-summary">
+        <div class="container">
+            <div class="summary-grid">
+                <div class="summary-card">
+                        <h3>Total Passengers</h3>
+                        <p class="data-value">5,842</p>
+                        <p class="data-info">Currently in airport</p>
+                </div>
+                
+                <div class="summary-card">
+                        <h3>Departing</h3>
+                        <p class="data-value">3,217</p>
+                        <p class="data-info">From 42 flights</p>
+                </div>
+                
+                <div class="summary-card">
+                        <h3>Arriving</h3>
+                        <p class="data-value">2,625</p>
+                        <p class="data-info">From 36 flights</p>
+                </div>
+                
+                <div class="summary-card">
+                        <h3>Check-ins</h3>
+                        <p class="data-value">1,824</p>
+                        <p class="data-info">Last 2 hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+                <!-- Terminal Statistics -->
+                <section class="terminal-summary">
+                    <div class="container">
+                <div class="terminal-grid">
+                    <div class="terminal-card" id="all-terminal">
+                        <div class="terminal-info">
+                            <h3>All Terminals</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 65%;"></div>
+                            </div>
+                            <div class="terminal-capacity">
+                                <p>5,842 / 9,000 capacity</p>
+                                <p>65% occupied</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="terminal-card " id="t1-terminal">
+                        <div class="terminal-info">
+                            <h3>Terminal 1</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 78%;"></div>
+                            </div>
+                            <div class="terminal-capacity">
+                                <span>2,340 / 3,000 capacity</span>
+                                <span>78% occupied</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="terminal-card " id="t2-terminal">
+                        <div class="terminal-info">
+                            <h3>Terminal 2</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 52%;"></div>
+                            </div>
+                            <div class="terminal-capacity">
+                                <span>1,560 / 3,000 capacity</span>
+                                <span>52% occupied</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="terminal-card" id="t3-terminal">
+                        <div class="terminal-info">
+                            <h3>Terminal 3</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 65%;"></div>
+                            </div>
+                            <div class="terminal-capacity">
+                                <span>1,942 / 3,000 capacity</span>
+                                <span>65% occupied</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <!-- Terminal Passengers Section -->
+        <section class="terminal-passengers">
+            <div class="container">
+                <!-- Search and Filter -->
+                <div class="search-filter">
+                    <a href="add_passenger.html"> <button class="add_passenger">Add New Passenger</button></a>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search passengers...">
+                        <button>Search</button>
+                    </div>
+                    <div class="filter-options">
+                        <select id="statusFilter">
+                            <option value="all">All Statuses</option>
+                            <option value="checked-in">Checked In</option>
+                            <option value="boarding">Boarding</option>
+                            <option value="departed">Departed</option>
+                            <option value="arrived">Arrived</option>
+                        </select>
+                        <select id="timeRangeFilter">
+                            <option value="all">All Time</option>
+                            <option value="next-1h">Next 1 Hour</option>
+                            <option value="next-3h">Next 3 Hours</option>
+                            <option value="today">Today</option>
+                        </select>
+                    </div>
+                </div>
+          </div>    
+        </section> 
+         <!-- Passenger List Table -->
+        <div class="passenger-detail">
+         <div class="table-wrapper">
+            <h3>Total Passaengers</h3>
+            <table class="passenger-detail-table">
+                <thead>
+                    <tr>
+                        <th>Flight</th>
+                        <th>Name</th>
+                        <th>PNR</th>
+                        <th>Seat</th>
+                        <th>Class</th>
+                        <th>Checked Bags</th>
+                        <th>Check-in Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SA 1024</td>
+                        <td>Krish Patel</td>
+                        <td>ABC123</td>
+                        <td>12A</td>
+                        <td>Business</td>
+                        <td>2</td>
+                        <td>06:45</td>
+                        <td><span class="status boarded">Boarded</span></td>
+                    </tr>
+                    <tr>
+                        <td>SA 3456</td>
+                        <td>Sunil Rathva</td>
+                        <td>DEF456</td>
+                        <td>14C</td>
+                        <td>Business</td>
+                        <td>1</td>
+                        <td>06:50</td>
+                        <td><span class="status boarded">Boarded</span></td>
+                    </tr>
+                    <tr>
+                        <td>SA 2468</td>
+                        <td>Vedansh Rajput</td>
+                        <td>GHI789</td>
+                        <td>18F</td>
+                        <td>Economy</td>
+                        <td>1</td>
+                        <td>07:10</td>
+                        <td><span class="status boarded">Boarded</span></td>
+                    </tr>
+                    <tr>
+                        <td>SA 9012	</td>
+                        <td>Dhruv Patel</td>
+                        <td>JKL012</td>
+                        <td>22D</td>
+                        <td>Economy</td>
+                        <td>2</td>
+                        <td>07:15</td>
+                        <td><span class="status checked-in">Checked In</span></td>
+                    </tr>
+                    <tr>
+                        <td>SA 7890</td>
+                        <td>Yash Patel</td>
+                        <td>MNO345</td>
+                        <td>5B</td>
+                        <td>Business</td>
+                        <td>1</td>
+                        <td>06:30</td>
+                        <td><span class="status boarded">Boarded</span></td>
+                    </tr>
+                    <tr>
+                        <td>SA 1024</td>
+                        <td>Rudra Pathak</td>
+                        <td>PQR678</td>
+                        <td>28A</td>
+                        <td>Economy</td>
+                        <td>1</td>
+                        <td>07:30</td>
+                        <td><span class="status checked-in">Checked In</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        <div class="modal-pagination">
+            <button class="pagination-btn">Previous</button>
+            <span class="pagination-info">Page 1 of 31</span>
+            <button class="pagination-btn">Next</button>
+        </div>
+</div>
+</div>
+                <!-- Passenger List  -->
+                <div class="passenger-list-container">
+                    <h3>Passengers by Flight</h3>
+                    <div class="table-wrapper">
+                        <table class="passenger-table">
+                            <thead>
+                                <tr>
+                                    <th>Flight</th>
+                                    <th>Destination/Origin</th>
+                                    <th>Terminal</th>
+                                    <th>Gate</th>
+                                    <th>Status</th>
+                                    <th>Time</th>
+                                    <th>Passenger Count</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SA 1024</td>
+                                    <td>Pune (PNQ)</td>
+                                    <td>T1</td>
+                                    <td>G12</td>
+                                    <td><span class="status boarding">Boarding</span></td>
+                                    <td>08:30</td>
+                                    <td>
+                                        <div class="passenger-count">
+                                            <span class="count">183/240</span>
+                                            <div class="small-progress">
+                                                <div class="small-progress-bar" style="width: 76%;"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>SA 3456</td>
+                                    <td>London (LHR)</td>
+                                    <td>T2</td>
+                                    <td>G05</td>
+                                    <td><span class="status checked-in">Checked In</span></td>
+                                    <td>09:15</td>
+                                    <td>
+                                        <div class="passenger-count">
+                                            <span class="count">142/220</span>
+                                            <div class="small-progress">
+                                                <div class="small-progress-bar" style="width: 65%;"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>SA 7890</td>
+                                    <td>Paris (CDG)</td>
+                                    <td>T1</td>
+                                    <td>G22</td>
+                                    <td><span class="status checked-in">Checked In</span></td>
+                                    <td>10:45</td>
+                                    <td>
+                                        <div class="passenger-count">
+                                            <span class="count">98/180</span>
+                                            <div class="small-progress">
+                                                <div class="small-progress-bar" style="width: 54%;"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>SA 2468</td>
+                                    <td>Mumbai (BOM)</td>
+                                    <td>T3</td>
+                                    <td>G10</td>
+                                    <td><span class="status check-in">Check-in Open</span></td>
+                                    <td>14:20</td>
+                                    <td>
+                                        <div class="passenger-count">
+                                            <span class="count">54/300</span>
+                                            <div class="small-progress">
+                                                <div class="small-progress-bar" style="width: 18%;"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>SA 5678</td>
+                                    <td>Chicago (ORD)</td>
+                                    <td>T2</td>
+                                    <td>G08</td>
+                                    <td><span class="status arrived">Arrived</span></td>
+                                    <td>07:45</td>
+                                    <td>
+                                        <div class="passenger-count">
+                                            <span class="count">205/205</span>
+                                            <div class="small-progress">
+                                                <div class="small-progress-bar" style="width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>SA 9012</td>
+                                    <td>Sydney (SYD)</td>
+                                    <td>T1</td>
+                                    <td>G18</td>
+                                    <td><span class="status in-flight">In Flight</span></td>
+                                    <td>09:30</td>
+                                    <td>
+                                        <div class="passenger-count">
+                                            <span class="count">268/268</span>
+                                            <div class="small-progress">
+                                                <div class="small-progress-bar" style="width: 100%;"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        <!-- Footer -->
+    <footer>
+        <div class="container">     
+             <h3>&copy; 2025 Sky Airport. All rights reserved.</h3>
+       </div>
+    </footer>
+</body>
+</html>

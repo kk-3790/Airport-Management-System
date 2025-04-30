@@ -1,0 +1,302 @@
+.Fight_management_page{
+    background-image:url("flight-photo.png");
+    background-size:cover;
+    background-position: center;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+/* Dashboard */
+
+.dashboard{
+    background: linear-gradient(rgba(233, 226, 226, 0.7), rgba(233, 236, 236, 0.7));
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dashboard-header{
+    color:#0066cc;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom:30px;
+    font-size: 1.8rem;
+    margin: auto;
+}
+.dashboard-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+.add_flight {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+.add_flight:hover {
+    background-color: #0052a3;
+}
+.search-box{
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.search-box input {
+    padding: 10px 15px;
+    border: none;
+    width: 200px;
+}
+.search-box button{
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    align-items: center;
+    cursor: pointer;
+}
+.search-box button:hover{
+    background-color: #0052a3;
+ }
+/* Flight Status Overview */
+.status-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.status-card {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    justify-content: center;
+}
+
+
+.on-time {
+    background-color: #408773;
+    border-radius: 10px;
+}
+
+.delayed {
+    background-color: #cf3c3c;
+    border-radius: 10px;
+}
+
+
+.cancelled {
+    background-color: #686f78;
+    border-radius: 10px;
+}
+
+.boarding {
+    background-color: #a66740;
+    border-radius: 10px;
+}
+
+.landed{
+    background-color: #b3bb6a;
+    border-radius: 10px;
+}
+
+.status-details h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.status-details p {
+    color: #ffffff;
+}
+/* status */
+.status-background{
+    background: linear-gradient(rgb(255, 255, 255,.9), rgba(255,255,255,.9));
+    padding: 100px;
+}
+.status{
+ position: relative;
+}
+.status h2{
+    color:#0066cc;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom:10px;
+}
+.status table{ 
+    background-color: #f3f4f6;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-weight: 600;
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.status th{
+    border-bottom: 1px solid #e5e7eb;
+    text-align: center;
+    padding: 5px;
+    border: 2px linear-gradient(rgb(255, 255, 255,.9), rgba(255,255,255,.9));
+}
+.status td { 
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+    padding:5px;
+    cursor: pointer;
+     border: 2px linear-gradient(rgb(255, 255, 255,.9), rgba(255,255,255,.9)); 
+}
+.status tr:nth-child(even)
+{
+    background-color: #6b5e5e;
+}
+
+.status tbody >tr:nth-child(odd)
+{
+    background-color: #cecaca;
+}
+
+.status thead >tr{
+    background-color: #e2e1d8;
+}
+
+.status-on-time{
+    background-color:#408773 ;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.status-boarding{
+    background-color:#a66740;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.status-cancelled{
+    background-color:#686f78;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.status-delayed{
+    background-color:#cf3c3c;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.status-landed{
+    background-color:#b3bb6a;
+    border-radius: 10px;
+    padding: 2px;
+}
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .dashboard {
+      padding: 30px 20px;
+    }
+  
+    .dashboard-actions {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 15px;
+    }
+  
+    .add_flight,
+    .search-box input,
+    .search-box button {
+      width: 100%;
+    }
+  
+    .search-box {
+      flex-direction: column;
+    }
+  
+    .status-background {
+      padding: 60px 20px;
+    }
+  
+    .status table {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    header .container,
+    .dashboard-header,
+    .dashboard-actions {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      padding: 0;
+      margin: 10px 0;
+    }
+  
+    nav ul li {
+      margin: 8px 0;
+    }
+  
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .status-overview {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+  
+    .status table {
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .dashboard-header h2,
+    .status h2 {
+      font-size: 1.5rem;
+    }
+  
+    .add_flight,
+    .search-box input,
+    .search-box button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .status-details h3 {
+      font-size: 1.4rem;
+    }
+  
+    .status-details p {
+      font-size: 0.9rem;
+    }
+  
+    .status table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+  

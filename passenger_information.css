@@ -1,0 +1,663 @@
+.passenger-information-page {
+    background-image: url('Terminal.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Dashboard Summary */
+.dashboard-summary {
+    padding: 60px 0 30px;
+    background: linear-gradient(rgba(233, 226, 226, 0.7), rgba(233, 236, 236, 0.7)) ;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.summary-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.summary-card h3 {
+    margin: 0 0 5px;
+    color: #4b5563;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.data-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0066cc;
+    margin: 0 0 5px;
+}
+
+.data-info {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 0;
+}
+
+/* Terminal Statistics */
+.terminal-summary {
+    padding: 60px 0 30px;
+    background: linear-gradient(rgba(124, 117, 117, 0.7), rgba(124, 117, 117, 0.7));
+}
+
+.terminal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.terminal-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.terminal-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-info h3 {
+    margin: 0 0 20px;
+    color: #0066cc;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #e5e7eb;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #0066cc;
+    border-radius: 5px;
+}
+
+.terminal-capacity {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+/* Terminal Passengers Section */
+.terminal-passengers {
+    padding-top:4px;
+    padding-bottom: 4px;
+    background: linear-gradient(rgba(233, 226, 226, 0.7), rgba(233, 236, 236, 0.7));
+}
+
+/* Search and Filter */
+
+.add_passenger {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add_passenger:hover {
+    background-color: #0052a3;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.search-box {
+    display: flex;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 50%;
+}
+
+.search-box input {
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+}
+
+.search-box button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.filter-options {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.filter-options select {
+    padding: 10px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    color: #4b5563;
+}
+
+/*Passenger List Table*/
+.passenger-detail{
+    background: linear-gradient(rgba(124, 117, 117, 0.7), rgba(124, 117, 117, 0.7));
+}
+.table-wrapper {
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.table-wrapper h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #0066cc;
+    font-size: 1.3rem;
+
+}
+
+.passenger-detail-table {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-weight: 600;
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.passenger-detail-table th {
+    text-align: center;
+    padding: 5px;
+    border: 2px linear-gradient(rgb(255, 255, 255,.9), rgba(255,255,255,.9));
+}
+
+.passenger-detail-table td {
+    text-align: center;
+    padding:5px;
+    cursor: pointer;
+    border: 2px linear-gradient(rgb(255, 255, 255,.9), rgba(255,255,255,.9)); 
+}
+.passenger-detail-table thead >tr{
+    background-color: #e2e1d8;
+}
+.passenger-detail-table tr:nth-child(even)
+{
+    background-color: #969191;
+}
+
+.passenger-detail-table tbody >tr:nth-child(odd)
+{
+    background-color: #cecaca;
+}
+.modal-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination-btn {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pagination-btn:hover {
+    background-color: #4566a9;
+}
+
+.pagination-info {
+    margin: 0 15px;
+    color: #000000;
+}
+
+/* Passenger List */
+
+.passenger-list-container {
+    background: linear-gradient(rgba(233, 226, 226, 0.7), rgba(233, 236, 236, 0.7));
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.passenger-list-container h3 {
+    margin: 0 0 20px;
+    color: #0066cc;
+    font-size: 1.3rem;
+}
+
+.passenger-table {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-weight: 600;
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.passenger-table th {
+    border-bottom: 1px solid #e5e7eb;
+    text-align: center;
+    padding: 5px;
+    border: 2px linear-gradient(rgb(255, 255, 255,.9), rgba(255,255,255,.9));
+}
+
+.passenger-table td {
+    text-align: center;
+    padding:5px;
+    cursor: pointer;
+    border: 2px linear-gradient(rgb(255, 255, 255,.9), rgba(255,255,255,.9)); 
+}
+
+.passenger-table thead >tr{
+    background-color: #e2e1d8;
+}
+.passenger-table tr:nth-child(even)
+{
+    background-color: #969191;
+}
+
+.passenger-table tbody >tr:nth-child(odd)
+{
+    background-color: #cecaca;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.status.boarding {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.status.checked-in {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.status.check-in {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+.status.arrived {
+    background-color: #d1fae5;
+    color: #047857;
+}
+
+.status.in-flight {
+    background-color: #e0e7ff;
+    color: #4338ca;
+}
+
+.status.boarded {
+    background-color: #fde68a;
+    color: #92400e;
+}
+
+.passenger-count {
+    display: flex;
+    flex-direction: column;
+}
+
+.count {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.small-progress {
+    height: 5px;
+    background-color: #e5e7eb;
+    border-radius: 2.5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.small-progress-bar {
+    height: 100%;
+    background-color: #0066cc;
+    border-radius: 2.5px;
+}
+
+/* General Responsive Adjustments */
+.passenger-information-page {
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+/* Container Responsiveness */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Responsiveness */
+header .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav ul li {
+    flex: 0 0 auto;
+}
+
+nav ul li a {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+/* Page Banner Responsiveness */
+.page-banner h1 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+}
+
+.page-banner p {
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+}
+
+/* Dashboard Summary Responsiveness */
+.summary-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.summary-card {
+    padding: 20px;
+}
+
+.summary-card h3 {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.data-value {
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+}
+
+.data-info {
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+
+/* Terminal Statistics Responsiveness */
+.terminal-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.terminal-card {
+    padding: 15px;
+}
+
+.terminal-info h3 {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+}
+
+.terminal-capacity {
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Search and Filter Responsiveness */
+.search-filter {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-box input {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.search-box button {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.filter-options {
+    flex: 1;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.filter-options select {
+    width: 100%;
+    max-width: 200px;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+/* Passenger Detail Table Responsiveness */
+.passenger-detail-table {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+
+.passenger-detail-table th,
+.passenger-detail-table td {
+    padding: 8px;
+}
+
+/* Passenger List Table Responsiveness */
+.passenger-list-container {
+    padding: 15px;
+}
+
+.passenger-table {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+
+.passenger-table th,
+.passenger-table td {
+    padding: 8px;
+}
+
+.passenger-count .count {
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+
+/* Modal Pagination Responsiveness */
+.modal-pagination {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pagination-btn {
+    padding: 8px 15px;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+
+.pagination-info {
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+
+/* Footer Responsiveness */
+footer h3 {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    text-align: center;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    /* Header */
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Dashboard Summary */
+    .dashboard-summary {
+        padding: 30px 0 15px;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Terminal Statistics */
+    .terminal-summary {
+        padding: 30px 0 15px;
+    }
+
+    .terminal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Search and Filter */
+    .search-filter {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box {
+        width: 100%;
+        max-width: none;
+    }
+
+    .filter-options {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .filter-options select {
+        width: 100%;
+        max-width: none;
+    }
+
+    /* Passenger Tables */
+    .passenger-detail-table,
+    .passenger-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .passenger-detail-table thead,
+    .passenger-detail-table tbody,
+    .passenger-table thead,
+    .passenger-table tbody {
+        display: table;
+        width: 100%;
+    }
+
+    .passenger-detail-table th,
+    .passenger-detail-table td,
+    .passenger-table th,
+    .passenger-table td {
+        min-width: 100px;
+    }
+
+    /* Pagination */
+    .modal-pagination {
+        flex-direction: column;
+    }
+
+    .pagination-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Page Banner */
+    .page-banner h1 {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+    }
+
+    .page-banner p {
+        font-size: clamp(0.8rem, 3vw, 1rem);
+    }
+
+    /* Summary and Terminal Cards */
+    .summary-card,
+    .terminal-card {
+        padding: 15px;
+    }
+
+    /* Tables */
+    .passenger-detail-table th,
+    .passenger-detail-table td,
+    .passenger-table th,
+    .passenger-table td {
+        font-size: clamp(0.7rem, 1.8vw, 0.8rem);
+        padding: 5px;
+    }
+
+    /* Pagination */
+    .pagination-btn {
+        padding: 6px 10px;
+    }
+}
