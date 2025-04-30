@@ -272,6 +272,7 @@ footer {
     color: white;
     padding: 30px 0;
 }
+
 /* Responsive Styles */
 @media (max-width: 900px) {
     .about-content,
@@ -330,9 +331,6 @@ footer {
         margin: 5px 0;
     }
 }
-
-
-
 
 
 
