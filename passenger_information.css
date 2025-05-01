@@ -8,7 +8,7 @@
 /* Dashboard Summary */
 .dashboard-summary {
     padding: 60px 0 30px;
-    background: linear-gradient(rgba(233, 226, 226, 0.7), rgba(233, 236, 236, 0.7)) ;
+    background: linear-gradient(rgba(233, 226, 226, 0.7)) ;
 }
 
 .summary-grid {
@@ -48,7 +48,7 @@
 /* Terminal Statistics */
 .terminal-summary {
     padding: 60px 0 30px;
-    background: linear-gradient(rgba(124, 117, 117, 0.7), rgba(124, 117, 117, 0.7));
+    background: linear-gradient(rgba(124, 117, 117, 0.7));
 }
 
 .terminal-grid {
@@ -100,7 +100,7 @@
 .terminal-passengers {
     padding-top:4px;
     padding-bottom: 4px;
-    background: linear-gradient(rgba(233, 226, 226, 0.7), rgba(233, 236, 236, 0.7));
+    background: linear-gradient(rgba(233, 226, 226, 0.7));
 }
 
 /* Search and Filter */
@@ -196,14 +196,14 @@
 .passenger-detail-table th {
     text-align: center;
     padding: 5px;
-    border: 2px linear-gradient(rgb(255, 255, 255,.9), rgba(255,255,255,.9));
+    border: 2px linear-gradient(rgb(255, 255, 255,.9));
 }
 
 .passenger-detail-table td {
     text-align: center;
     padding:5px;
     cursor: pointer;
-    border: 2px linear-gradient(rgb(255, 255, 255,.9), rgba(255,255,255,.9)); 
+    border: 2px linear-gradient(rgb(255, 255, 255,.9)); 
 }
 .passenger-detail-table thead >tr{
     background-color: #e2e1d8;
@@ -249,7 +249,7 @@
 /* Passenger List */
 
 .passenger-list-container {
-    background: linear-gradient(rgba(233, 226, 226, 0.7), rgba(233, 236, 236, 0.7));
+    background: linear-gradient(rgba(233, 226, 226, 0.7));
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
@@ -275,14 +275,14 @@
     border-bottom: 1px solid #e5e7eb;
     text-align: center;
     padding: 5px;
-    border: 2px linear-gradient(rgb(255, 255, 255,.9), rgba(255,255,255,.9));
+    border: 2px linear-gradient(rgba(255,255,255,.9));
 }
 
 .passenger-table td {
     text-align: center;
     padding:5px;
     cursor: pointer;
-    border: 2px linear-gradient(rgb(255, 255, 255,.9), rgba(255,255,255,.9)); 
+    border: 2px linear-gradient(rgba(255,255,255,.9)); 
 }
 
 .passenger-table thead >tr{
@@ -361,203 +361,14 @@
     border-radius: 2.5px;
 }
 
-/* General Responsive Adjustments */
-.passenger-information-page {
-    min-height: 100vh; /* Ensure full viewport height */
-}
-
-/* Container Responsiveness */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-/* Header Responsiveness */
-header .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    flex: 1 0 auto;
-}
-
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-nav ul li {
-    flex: 0 0 auto;
-}
-
-nav ul li a {
-    font-size: clamp(0.9rem, 2vw, 1rem);
-}
-
-/* Page Banner Responsiveness */
-.page-banner h1 {
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
-}
-
-.page-banner p {
-    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
-}
-
-/* Dashboard Summary Responsiveness */
-.summary-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.summary-card {
-    padding: 20px;
-}
-
-.summary-card h3 {
-    font-size: clamp(0.9rem, 2.5vw, 1rem);
-}
-
-.data-value {
-    font-size: clamp(1.5rem, 4vw, 1.8rem);
-}
-
-.data-info {
-    font-size: clamp(0.8rem, 2vw, 0.9rem);
-}
-
-/* Terminal Statistics Responsiveness */
-.terminal-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.terminal-card {
-    padding: 15px;
-}
-
-.terminal-info h3 {
-    font-size: clamp(1.2rem, 3vw, 1.5rem);
-}
-
-.terminal-capacity {
-    font-size: clamp(0.8rem, 2vw, 0.9rem);
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-/* Search and Filter Responsiveness */
-.search-filter {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.search-box {
-    width: 100%;
-    max-width: 400px;
-}
-
-.search-box input {
-    font-size: clamp(0.9rem, 2.5vw, 1rem);
-}
-
-.search-box button {
-    font-size: clamp(0.9rem, 2.5vw, 1rem);
-}
-
-.filter-options {
-    flex: 1;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
-
-.filter-options select {
-    width: 100%;
-    max-width: 200px;
-    font-size: clamp(0.9rem, 2.5vw, 1rem);
-}
-
-/* Passenger Detail Table Responsiveness */
-.passenger-detail-table {
-    width: 100%;
-    max-width: 100%;
-    font-size: clamp(0.8rem, 2vw, 0.9rem);
-}
-
-.passenger-detail-table th,
-.passenger-detail-table td {
-    padding: 8px;
-}
-
-/* Passenger List Table Responsiveness */
-.passenger-list-container {
-    padding: 15px;
-}
-
-.passenger-table {
-    width: 100%;
-    max-width: 100%;
-    font-size: clamp(0.8rem, 2vw, 0.9rem);
-}
-
-.passenger-table th,
-.passenger-table td {
-    padding: 8px;
-}
-
-.passenger-count .count {
-    font-size: clamp(0.8rem, 2vw, 0.9rem);
-}
-
-/* Modal Pagination Responsiveness */
-.modal-pagination {
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.pagination-btn {
-    padding: 8px 15px;
-    font-size: clamp(0.8rem, 2vw, 0.9rem);
-}
-
-.pagination-info {
-    font-size: clamp(0.8rem, 2vw, 0.9rem);
-}
-
-/* Footer Responsiveness */
-footer h3 {
-    font-size: clamp(0.9rem, 2.5vw, 1rem);
-    text-align: center;
-}
-
-/* Media Queries for Smaller Screens */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    /* Header */
+ 
     header .container {
         flex-direction: column;
         text-align: center;
     }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    nav ul li {
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Dashboard Summary */
     .dashboard-summary {
         padding: 30px 0 15px;
     }
@@ -566,7 +377,7 @@ footer h3 {
         grid-template-columns: 1fr;
     }
 
-    /* Terminal Statistics */
+  
     .terminal-summary {
         padding: 30px 0 15px;
     }
@@ -575,7 +386,7 @@ footer h3 {
         grid-template-columns: 1fr;
     }
 
-    /* Search and Filter */
+    
     .search-filter {
         flex-direction: column;
         align-items: stretch;
@@ -597,7 +408,6 @@ footer h3 {
         max-width: none;
     }
 
-    /* Passenger Tables */
     .passenger-detail-table,
     .passenger-table {
         display: block;
@@ -605,22 +415,6 @@ footer h3 {
         white-space: nowrap;
     }
 
-    .passenger-detail-table thead,
-    .passenger-detail-table tbody,
-    .passenger-table thead,
-    .passenger-table tbody {
-        display: table;
-        width: 100%;
-    }
-
-    .passenger-detail-table th,
-    .passenger-detail-table td,
-    .passenger-table th,
-    .passenger-table td {
-        min-width: 100px;
-    }
-
-    /* Pagination */
     .modal-pagination {
         flex-direction: column;
     }
@@ -632,7 +426,7 @@ footer h3 {
 }
 
 @media (max-width: 480px) {
-    /* Page Banner */
+
     .page-banner h1 {
         font-size: clamp(1.5rem, 6vw, 2rem);
     }
@@ -641,22 +435,12 @@ footer h3 {
         font-size: clamp(0.8rem, 3vw, 1rem);
     }
 
-    /* Summary and Terminal Cards */
+
     .summary-card,
     .terminal-card {
         padding: 15px;
     }
 
-    /* Tables */
-    .passenger-detail-table th,
-    .passenger-detail-table td,
-    .passenger-table th,
-    .passenger-table td {
-        font-size: clamp(0.7rem, 1.8vw, 0.8rem);
-        padding: 5px;
-    }
-
-    /* Pagination */
     .pagination-btn {
         padding: 6px 10px;
     }
